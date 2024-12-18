@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad's Portfolio</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-buttons">
+                <button class="nav-button active" data-section="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                </button>
+                <button class="nav-button" data-section="contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Hi, I'm Saad</h1>
+                    <p>A student with passion for technology, sports, and continuous learning</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=735" alt="Football field" class="card-image">
+                        <h2>Football Passion</h2>
+                        <p class="card-content">Football isn't just a sport for me—it's a source of unforgettable memories. One of my proudest moments was scoring an incredible goal that left everyone in awe. The way the ball curved into the top corner, the collective gasp from the crowd, and the celebrations that followed—these are moments that stay etched in not just my memory, but in the minds of everyone who witnessed it.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&q=80&w=736" alt="Learning concept" class="card-image">
+                        <h2>Quick Learning & Observation</h2>
+                        <p class="card-content">My parents often point out my exceptional observational skills, and it's something I've come to recognize in myself. This ability has served me well, particularly when I learned to drive by carefully watching my father's techniques. It's fascinating how the mind can absorb and replicate complex patterns through careful observation.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=869" alt="Coding" class="card-image">
+                        <h2>Programming Journey</h2>
+                        <p class="card-content">A few weeks ago, I embarked on my coding journey. While progress might seem minimal, every line of code I write brings me closer to my goal of creating impactful software. The digital world fascinates me, and I'm determined to understand its inner workings. This website represents one of my first steps into web development.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=871" alt="Academic studies" class="card-image">
+                        <h2>Academic Journey</h2>
+                        <p class="card-content">Currently pursuing my AS levels in Riyadh, I'm navigating the challenges of academic life. While my first term exams didn't go as planned, I'm approaching the second term with renewed determination. Mathematics, in particular, captivates me with its logical problem-solving aspects. My Pakistani heritage combined with my life in Riyadh has given me a unique perspective on education and life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-container">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                        <p id="success-message" class="success-message hidden">Message sent successfully!</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
